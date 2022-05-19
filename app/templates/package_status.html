@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href="/new_package">NEW PACKAGE</a>
+        <ul>
+            {% for package in packages %}
+            <li>{{ package.id }}</li>
+            <li>{{ package.sender }}</li>
+            <li>{{ package.recipient }}</li>
+            <li>{{ package.origin }}</li>
+            <li>{{ package.destination }}</li>
+            <li>{{ package.location }}</li>
+            {% endfor %}
+
+        </ul>
+
+    </body>
+</html>
